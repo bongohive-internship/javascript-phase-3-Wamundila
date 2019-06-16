@@ -68,4 +68,40 @@
  	var totalSum = sumThree + sumFive;
  	console.log("The sum of the multiples of 3 and 5 under 1000 is "+totalSum );
  	
- 	
+ //Q4: Assign grade function
+ 
+	 function assignGrade (score)
+	 {
+	 	// F = score from 0 to 49, D = score from 50 to 59, C = score from 60 to 69, B = score from 70 to 89, A = score from 90 to 100, 
+	 	if(score<50)
+	 	{
+	 		return("F");
+	 	}
+	 	else if(score<60)
+	 	{
+	 		return("D");
+	 	}
+	 	else if(score<70)
+	 	{	
+	 		return("C");
+	 	}
+	 	else if(score<90)
+	 	{
+	 		return("B");
+	 	}
+	 	else
+	 	{
+	 		return("A");
+	 	}
+	 }
+	 //examples of assignGrade function in use
+	 console.log(assignGrade(25));
+	 console.log(assignGrade(55));
+	 console.log(assignGrade(75));
+
+// Q5: Test  assignGrade function
+
+	for(i=60;i<101;i++)
+	{
+		console.log("For "+i+", you got a "+assignGrade(i));
+	}
